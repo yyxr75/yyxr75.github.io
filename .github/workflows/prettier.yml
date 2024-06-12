@@ -24,11 +24,19 @@ jobs:
       - name: Prettier Check 🔎
         id: prettier
         run: npx prettier . --check
+      - name: Auto-fix and commit formatting issues 🛠️
+        if: ${{ failure() }}
+        run: |
+          npx prettier . --write
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
+          git add .
+          git commit -m "Fix formatting issues with Prettier"
+          git push
       - name: Create diff 📝
         # https://docs.github.com/en/actions/learn-github-actions/expressions#failure
         if: ${{ failure() }}
         run: |
-          npx prettier . --write
           git diff -- . ':(exclude)package-lock.json' ':(exclude)package.json' > diff.txt
           npm install -g diff2html-cli
           diff2html -i file -s side -F diff.html -- diff.txt
