@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-label="Radar and LiDAR bird's-eye-view fusion for anchor-box-free object detection">
+  <defs><marker id="a" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="M0,0 L9,4.5 L0,9 z" fill="#64748b"/></marker></defs>
+  <rect width="600" height="300" rx="10" fill="#f8fafc"/>
+  <rect x="22" y="28" width="146" height="102" rx="6" fill="#fff" stroke="#cbd5e1"/>
+  <ellipse cx="72" cy="72" rx="28" ry="21" fill="#f59e0b" opacity=".5"/>
+  <ellipse cx="120" cy="97" rx="21" ry="15" fill="#f59e0b" opacity=".38"/>
+  <ellipse cx="98" cy="60" rx="14" ry="11" fill="#ef4444" opacity=".5"/>
+  <text x="95" y="150" font-size="17" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif">Radar heatmap</text>
+  <rect x="22" y="172" width="146" height="90" rx="6" fill="#fff" stroke="#cbd5e1"/>
+  <g fill="#0d9488">
+    <circle cx="48" cy="200" r="2.6"/><circle cx="66" cy="192" r="2.6"/><circle cx="84" cy="203" r="2.6"/>
+    <circle cx="103" cy="195" r="2.6"/><circle cx="122" cy="206" r="2.6"/><circle cx="140" cy="197" r="2.6"/>
+    <circle cx="57" cy="222" r="2.6"/><circle cx="76" cy="230" r="2.6"/><circle cx="95" cy="219" r="2.6"/>
+    <circle cx="114" cy="232" r="2.6"/><circle cx="133" cy="223" r="2.6"/><circle cx="66" cy="245" r="2.6"/>
+    <circle cx="104" cy="247" r="2.6"/><circle cx="128" cy="243" r="2.6"/>
+  </g>
+  <text x="95" y="280" font-size="17" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif">LiDAR points</text>
+  <path d="M175,80 L212,128" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <path d="M175,212 L212,166" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <rect x="218" y="112" width="132" height="72" rx="8" fill="#2563eb" opacity=".12"/>
+  <rect x="218" y="112" width="132" height="72" rx="8" fill="none" stroke="#2563eb" stroke-width="1.6"/>
+  <text x="284" y="142" font-size="19" text-anchor="middle" fill="#1e40af" font-family="system-ui,sans-serif" font-weight="600">BEV Fusion</text>
+  <text x="284" y="165" font-size="15" text-anchor="middle" fill="#1e40af" font-family="system-ui,sans-serif">transformer</text>
+  <path d="M356,148 L396,148" stroke="#64748b" stroke-width="2" fill="none" marker-end="url(#a)"/>
+  <rect x="404" y="52" width="174" height="196" rx="6" fill="#fff" stroke="#cbd5e1"/>
+  <g stroke="#e2e8f0" stroke-width="1">
+    <path d="M404,101 H578"/><path d="M404,150 H578"/><path d="M404,199 H578"/>
+    <path d="M462,52 V248"/><path d="M520,52 V248"/>
+  </g>
+  <rect x="432" y="80" width="52" height="34" rx="3" fill="none" stroke="#ef4444" stroke-width="2.4"/>
+  <rect x="498" y="158" width="46" height="30" rx="3" fill="none" stroke="#ef4444" stroke-width="2.4"/>
+  <rect x="440" y="182" width="38" height="26" rx="3" fill="none" stroke="#ef4444" stroke-width="2.4"/>
+  <text x="491" y="272" font-size="17" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif">All-weather detection</text>
+</svg>

@@ -1,6 +1,8 @@
 ---
 title: "Observation of Phase Transitions of Ba0.6Sr0.4TiO3-Silicon Hybrid Metamaterial by THz Spectra"
 collection: publications
+header:
+  teaser: "pubs/metamaterial.svg"
 category: manuscripts
 permalink: /publication/2020-metamaterial-thz
 excerpt: 'THz-spectroscopy study of phase transitions in a Ba0.6Sr0.4TiO3-silicon hybrid metamaterial.'

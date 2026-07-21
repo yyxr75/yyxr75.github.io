@@ -243,3 +243,15 @@
     }
   }
 }
+
+/*
+   Teaser thumbnails in list view (publications, projects)
+   ========================================================================== */
+
+.list__item {
+  .archive__item-teaser {
+    max-width: 340px;
+    margin: 0 0 0.75em;
+    border: 1px solid #e2e8f0;
+  }
+}

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-label="Phase transitions of a BST-silicon hybrid metamaterial observed by THz spectra">
+  <rect width="600" height="300" rx="10" fill="#f8fafc"/>
+  <rect x="28" y="56" width="228" height="188" rx="6" fill="#fff" stroke="#cbd5e1"/>
+  <g fill="none" stroke="#2563eb" stroke-width="3">
+    <path d="M56,84 h56 v40 h-16 v-24 h-24 v24 h-16 z"/>
+    <path d="M144,84 h56 v40 h-16 v-24 h-24 v24 h-16 z"/>
+    <path d="M56,146 h56 v40 h-16 v-24 h-24 v24 h-16 z"/>
+    <path d="M144,146 h56 v40 h-16 v-24 h-24 v24 h-16 z"/>
+  </g>
+  <rect x="44" y="204" width="196" height="14" rx="3" fill="#94a3b8" opacity=".55"/>
+  <text x="142" y="236" font-size="15" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif">BST on silicon</text>
+  <g stroke="#f59e0b" stroke-width="2" opacity=".8">
+    <path d="M14,70 q10,-8 20,0 t20,0"/><path d="M14,100 q10,-8 20,0 t20,0"/>
+  </g>
+  <text x="34" y="44" font-size="15" text-anchor="middle" fill="#b45309" font-family="system-ui,sans-serif">THz</text>
+  <rect x="286" y="56" width="288" height="188" rx="6" fill="#fff" stroke="#cbd5e1"/>
+  <path d="M318,214 H556" stroke="#94a3b8" stroke-width="1.6"/>
+  <path d="M318,214 V80" stroke="#94a3b8" stroke-width="1.6"/>
+  <path d="M318,100 C360,104 386,196 418,198 C452,200 482,116 520,110 C536,108 548,112 556,116"
+        fill="none" stroke="#2563eb" stroke-width="2.6"/>
+  <path d="M318,116 C356,120 402,204 440,206 C476,208 500,132 534,126 C544,124 550,126 556,128"
+        fill="none" stroke="#ef4444" stroke-width="2.6" stroke-dasharray="7 5"/>
+  <text x="437" y="238" font-size="15" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif">Frequency (THz)</text>
+  <text x="302" y="150" font-size="15" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif" transform="rotate(-90 302 150)">Transmission</text>
+  <rect x="446" y="70" width="14" height="4" fill="#2563eb"/>
+  <text x="466" y="76" font-size="14" fill="#475569" font-family="system-ui,sans-serif">phase A</text>
+  <rect x="446" y="88" width="14" height="4" fill="#ef4444"/>
+  <text x="466" y="94" font-size="14" fill="#475569" font-family="system-ui,sans-serif">phase B</text>
+</svg>

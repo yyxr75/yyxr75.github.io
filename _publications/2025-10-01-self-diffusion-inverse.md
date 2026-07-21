@@ -1,6 +1,8 @@
 ---
 title: "Self-Diffusion for Solving Inverse Problems"
 collection: publications
+header:
+  teaser: "pubs/self-diffusion.svg"
 category: preprints
 permalink: /publication/2025-self-diffusion-inverse
 excerpt: 'A self-diffusion framework for solving inverse problems without pre-training.'
