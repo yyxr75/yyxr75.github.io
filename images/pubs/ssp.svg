@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 300" role="img" aria-label="Small object detection from sparse roadside LiDAR point clouds">
+  <rect width="600" height="300" rx="10" fill="#f8fafc"/>
+  <rect x="24" y="150" width="552" height="120" rx="6" fill="#e2e8f0"/>
+  <g stroke="#fff" stroke-width="4" stroke-dasharray="26 20">
+    <path d="M24,190 H576"/><path d="M24,232 H576"/>
+  </g>
+  <rect x="72" y="60" width="9" height="96" rx="3" fill="#475569"/>
+  <circle cx="76" cy="54" r="13" fill="#2563eb"/>
+  <g fill="none" stroke="#2563eb" stroke-width="1.8" opacity=".45">
+    <path d="M96,54 A46,46 0 0 1 132,96"/>
+    <path d="M112,44 A82,82 0 0 1 172,120"/>
+    <path d="M128,34 A118,118 0 0 1 210,146"/>
+  </g>
+  <text x="76" y="288" font-size="16" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif">Roadside LiDAR</text>
+  <g fill="#0d9488" opacity=".85">
+    <circle cx="238" cy="176" r="2.2"/><circle cx="262" cy="200" r="2.2"/><circle cx="290" cy="182" r="2.2"/>
+    <circle cx="318" cy="214" r="2.2"/><circle cx="352" cy="188" r="2.2"/><circle cx="384" cy="222" r="2.2"/>
+    <circle cx="416" cy="196" r="2.2"/><circle cx="448" cy="232" r="2.2"/><circle cx="482" cy="204" r="2.2"/>
+    <circle cx="516" cy="240" r="2.2"/><circle cx="546" cy="212" r="2.2"/><circle cx="272" cy="248" r="2.2"/>
+    <circle cx="336" cy="256" r="2.2"/><circle cx="404" cy="168" r="2.2"/><circle cx="470" cy="176" r="2.2"/>
+  </g>
+  <rect x="252" y="186" width="34" height="30" rx="3" fill="none" stroke="#ef4444" stroke-width="2.4"/>
+  <text x="269" y="180" font-size="13" text-anchor="middle" fill="#ef4444" font-family="system-ui,sans-serif">ped</text>
+  <rect x="372" y="206" width="38" height="30" rx="3" fill="none" stroke="#ef4444" stroke-width="2.4"/>
+  <text x="391" y="200" font-size="13" text-anchor="middle" fill="#ef4444" font-family="system-ui,sans-serif">cyclist</text>
+  <rect x="500" y="222" width="34" height="30" rx="3" fill="none" stroke="#ef4444" stroke-width="2.4"/>
+  <text x="410" y="42" font-size="19" text-anchor="middle" fill="#1e40af" font-family="system-ui,sans-serif" font-weight="600">Small objects from sparse points</text>
+  <text x="410" y="68" font-size="15" text-anchor="middle" fill="#475569" font-family="system-ui,sans-serif">vehicle-to-infrastructure cooperation</text>
+</svg>
