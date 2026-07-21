@@ -1,4 +1,1 @@
-User-agent: *
-Disallow:
-
 Sitemap: https://yyxr75.github.io/sitemap.xml
