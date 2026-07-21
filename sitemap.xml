@@ -1,7 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 <url>
-<loc>https://yyxr75.github.io/portfolio/portfolio-2/</loc>
+<loc>https://yyxr75.github.io/projects/ralibev</loc>
+</url>
+<url>
+<loc>https://yyxr75.github.io/projects/radarinv</loc>
+</url>
+<url>
+<loc>https://yyxr75.github.io/projects/world-models</loc>
+</url>
+<url>
+<loc>https://yyxr75.github.io/projects/crocodile-detection</loc>
+</url>
+<url>
+<loc>https://yyxr75.github.io/projects/thermal-reconstruction</loc>
 </url>
 <url>
 <loc>https://yyxr75.github.io/publication/2020-metamaterial-thz</loc>
@@ -43,6 +55,9 @@
 <loc>https://yyxr75.github.io/page-archive/</loc>
 </url>
 <url>
+<loc>https://yyxr75.github.io/projects/</loc>
+</url>
+<url>
 <loc>https://yyxr75.github.io/publications/</loc>
 </url>
 <url>
@@ -59,6 +74,6 @@
 </url>
 <url>
 <loc>https://yyxr75.github.io/files/CV_YanlongYang.pdf</loc>
-<lastmod>2026-07-21T06:10:08+00:00</lastmod>
+<lastmod>2026-07-21T06:50:07+00:00</lastmod>
 </url>
 </urlset>
