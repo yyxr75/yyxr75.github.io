@@ -12,6 +12,8 @@ profile:
     <p>College of Science and Engineering</p>
     <p>James Cook University</p>
     <p>Cairns, QLD, Australia</p>
+    <p><a href="mailto:yanlong.yang@my.jcu.edu.au">yanlong.yang@my.jcu.edu.au</a></p>
+    <p>+61 434 774 843</p>
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -20,11 +22,6 @@ announcements:
   enabled: true
   scrollable: true
   limit: 5
-
-latest_posts:
-  enabled: false
-  scrollable: true
-  limit: 3
 ---
 
 I'm a PhD researcher at [James Cook University](https://www.jcu.edu.au/), advised by Dr. Tao Huang. My work centers on **diffusion-based generative priors for inverse problems and sensing** — recovering clean structure from noisy, incomplete measurements. My recent first-author work at **CVPR 2026** (DeblurSDI) tackles blind imaging with a self-diffusion framework that needs no pre-training.
