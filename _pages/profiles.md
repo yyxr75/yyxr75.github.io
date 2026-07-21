@@ -2,27 +2,27 @@
 layout: profiles
 permalink: /people/
 title: people
-description: members of the lab or group
+description: My academic advisors.
 nav: true
 nav_order: 7
 
 profiles:
-  # if you want to include more than one profile, just replicate the following block
-  # and create one content file for each profile inside _pages/
   - align: right
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
+    content: advisor_tao_huang.md
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>PhD Advisor</p>
+      <p>James Cook University, Australia</p>
+      <p>tao.huang1@jcu.edu.au</p>
   - align: left
-    image: prof_pic.jpg
-    content: about_einstein.md
-    image_circular: false # crops the image to make it circular
+    content: advisor_weiqi_jin.md
     more_info: >
-      <p>555 your office number</p>
-      <p>123 your address street</p>
-      <p>Your City, State 12345</p>
+      <p>Master's Advisor</p>
+      <p>Beijing Institute of Technology, China</p>
+      <p>jinwq@bit.edu.cn</p>
+  - align: right
+    content: advisor_liang_wu.md
+    more_info: >
+      <p>Bachelor's Advisor</p>
+      <p>Tianjin University, China</p>
+      <p>wuliang@tju.edu.cn</p>
 ---
