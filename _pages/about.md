@@ -6,7 +6,7 @@ subtitle: PhD Researcher, <a href='https://www.jcu.edu.au/'>James Cook Universit
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: yanlong.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>College of Science and Engineering</p>
