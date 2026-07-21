@@ -1,8 +1,7 @@
 ---
 layout: post
-date: 2015-10-22 15:59:00-0400
+date: 2026-02-27 09:00:00+1000
 inline: true
 related_posts: false
 ---
-
-A simple inline announcement.
+Our paper *Self-Diffusion Driven Blind Imaging* (DeblurSDI) was accepted to **CVPR 2026**. :tada:
