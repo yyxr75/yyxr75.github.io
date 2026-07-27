@@ -1,0 +1,42 @@
+# Matching profile for Yanlong Yang — used to score/rank scraped jobs.
+name: Yanlong Yang
+
+# What we're looking for
+target_roles:
+  - Applied Scientist Intern
+  - Research Scientist Intern
+  - PhD Research Intern / Internship
+  - Computer Vision / Machine Learning Scientist
+seniority_ok: [intern, internship, phd, graduate, entry, "research scientist"]
+
+# Strengths (drive the match score)
+keywords_strong:
+  - computer vision
+  - diffusion
+  - generative model
+  - image restoration
+  - inverse problems
+  - deep learning
+  - PyTorch
+  - 3D reconstruction
+  - point cloud
+  - sensor fusion
+  - radar
+  - lidar
+keywords_nice:
+  - world model
+  - super-resolution
+  - object detection
+  - computational imaging
+  - MRI
+
+# Location / eligibility
+locations_ok: [Australia, Melbourne, Sydney, Brisbane, Cairns, Remote, relocation]
+constraints:
+  degree: PhD (in progress, James Cook University)
+  based_in: Cairns, Australia
+  open_to_relocation: true
+  note: "Verify visa/work-eligibility per posting (currently on student visa in Australia)."
+
+# Hard filters — drop these outright
+exclude_titles: [manager, director, principal, "staff ", sales, marketing, recruiter, intern coordinator]

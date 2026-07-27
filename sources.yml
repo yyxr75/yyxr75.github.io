@@ -1,0 +1,26 @@
+# Job sources. API/feed-first (no fragile HTML scraping, ToS-friendly).
+# fetch.py reads this. Add company tokens / an Adzuna key over time.
+
+amazon_jobs:            # public search JSON on amazon.jobs — no key needed
+  enabled: true
+  queries: ["computer vision", "machine learning", "applied scientist", "deep learning"]
+  location: "Australia"
+  result_limit: 100
+
+greenhouse:             # boards-api.greenhouse.io/v1/boards/{token}/jobs?content=true
+  # company board tokens (the {token} in boards.greenhouse.io/{token}). Add as you find them.
+  # (find a company's ATS: open its careers page and look for boards.greenhouse.io / jobs.lever.co / jobs.ashbyhq.com)
+  tokens: [anthropic, wayve]
+
+lever:                  # api.lever.co/v0/postings/{token}?mode=json
+  tokens: []
+
+ashby:                  # api.ashbyhq.com/posting-api/job-board/{token}
+  tokens: [openai]
+
+adzuna:                 # broad AU aggregator — free key at https://developer.adzuna.com
+  enabled: false        # set true after filling the key below
+  app_id: ""
+  app_key: ""
+  country: au
+  queries: ["computer vision phd", "machine learning research scientist", "applied scientist intern"]
