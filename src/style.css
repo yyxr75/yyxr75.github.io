@@ -172,9 +172,6 @@ p { margin: 0 0 1em; }
 .has-shots .proj-txt { order: 1; max-width: 70ch; }
 .has-shots .proj-fig { order: 2; }
 .proj-fig.sm figcaption { margin-top: 8px; font-size: 11.5px; color: var(--muted); text-align: center; }
-.gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 28px; align-items: start; }
-.gallery .shot.wide, .gallery .shot:only-child { grid-column: 1 / -1; }
-.gallery .shot:only-child:not(.wide) { max-width: 880px; }
 .h3 { font-size: 19px; margin: 26px 0 10px; }
 .ticks { padding: 0; margin: 0; list-style: none; }
 .ticks li { position: relative; padding: 6px 0 6px 26px; border-top: 1px dashed var(--rule); }
@@ -231,7 +228,7 @@ p { margin: 0 0 1em; }
 @media (max-width: 900px) {
   .hero-in, .two, .proj-grid { grid-template-columns: 1fr; gap: 32px; }
   .proj-fig { position: static; }
-  .proj-grid.has-shots, .gallery { grid-template-columns: 1fr; }
+  .proj-grid.has-shots { grid-template-columns: 1fr; }
   .has-shots .proj-fig { max-width: 320px; }
   .shot a { padding: 8px; border-radius: 10px; }
   .pub-feat { grid-template-columns: 1fr; }

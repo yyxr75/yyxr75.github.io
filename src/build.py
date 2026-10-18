@@ -263,10 +263,8 @@ def projects():
             # real project images: lead image up top, the sketch becomes a small schematic beside the text
             lead = shot(pr["slug"], *shots[0], cls="lead", eager=True)
             side = f'<figure class="proj-fig sm">{fig(pr["fig"])}<figcaption class="mono">Schematic</figcaption></figure>'
-            more = "".join(shot(pr["slug"], *s) for s in shots[1:])
-            gallery = f'<h2 class="h3">From the project</h2><div class="gallery">{more}</div>' if more else ""
         else:
-            lead, gallery = "", ""
+            lead = ""
             side = f'<figure class="proj-fig">{fig(pr["fig"])}</figure>'
         body = f"""
 <article class="wrap proj">
@@ -286,7 +284,6 @@ def projects():
       {lk}
     </div>
   </div>
-  {gallery}
   {pubhtml}
   {pager}
 </article>
