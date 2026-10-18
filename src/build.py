@@ -23,6 +23,27 @@ def fig(name, cls=""):
     return svg.replace('class="fig"', f'class="fig {cls}"'.strip(), 1)
 
 
+def webp_size(path):
+    # width/height from the WebP header, so <img> reserves its box without Pillow
+    b = open(path, "rb").read(30)
+    if b[12:16] == b"VP8X":
+        return 1 + int.from_bytes(b[24:27], "little"), 1 + int.from_bytes(b[27:30], "little")
+    if b[12:16] == b"VP8L":
+        v = int.from_bytes(b[21:25], "little")
+        return (v & 0x3FFF) + 1, ((v >> 14) & 0x3FFF) + 1
+    return int.from_bytes(b[26:28], "little") & 0x3FFF, int.from_bytes(b[28:30], "little") & 0x3FFF
+
+
+def shot(slug, n, cap, src, cls="", eager=False):
+    url = f"/images/projects/{slug}/{n}.webp"
+    w, h = webp_size(os.path.join(OUT, url.lstrip("/")))
+    classes = " ".join(c for c in ("shot", "wide" if w / h > 2.2 else "", cls) if c)
+    load = "" if eager else ' loading="lazy"'
+    return (f'<figure class="{classes}"><a href="{url}" aria-label="Open full-size image">'
+            f'<img src="{url}" width="{w}" height="{h}" alt="{cap}"{load} decoding="async"></a>'
+            f'<figcaption>{cap} <span class="mono src">{src}</span></figcaption></figure>')
+
+
 def authors(p):
     out = []
     for i, a in enumerate(p["authors"]):
@@ -237,6 +258,16 @@ def projects():
         pager += f'<a href="/projects/{prev["slug"]}/"><span class="mono">← Newer</span>{prev["title"]}</a>' if prev else "<span></span>"
         pager += f'<a class="r" href="/projects/{nxt["slug"]}/"><span class="mono">Older →</span>{nxt["title"]}</a>' if nxt else "<span></span>"
         pager += "</nav>"
+        shots = pr.get("shots", [])
+        if shots:
+            # real project images: lead image up top, the sketch becomes a small schematic beside the text
+            lead = shot(pr["slug"], *shots[0], cls="lead", eager=True)
+            side = f'<figure class="proj-fig sm">{fig(pr["fig"])}<figcaption class="mono">Schematic</figcaption></figure>'
+            more = "".join(shot(pr["slug"], *s) for s in shots[1:])
+            gallery = f'<h2 class="h3">From the project</h2><div class="gallery">{more}</div>' if more else ""
+        else:
+            lead, gallery = "", ""
+            side = f'<figure class="proj-fig">{fig(pr["fig"])}</figure>'
         body = f"""
 <article class="wrap proj">
   <a class="back mono" href="/projects/">← All projects</a>
@@ -245,8 +276,9 @@ def projects():
     <h1>{pr['title']}</h1>
     <p class="lede">{pr['sub']}</p>
   </header>
-  <div class="proj-grid">
-    <figure class="proj-fig">{fig(pr['fig'])}</figure>
+  {lead}
+  <div class="proj-grid{' has-shots' if shots else ''}">
+    {side}
     <div class="proj-txt">
       {paras}
       <h2 class="h3">Highlights</h2>
@@ -254,6 +286,7 @@ def projects():
       {lk}
     </div>
   </div>
+  {gallery}
   {pubhtml}
   {pager}
 </article>
