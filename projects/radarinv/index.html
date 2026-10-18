@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>RadarINV — Unsupervised Radar Point-Cloud Enhancement · Yanlong Yang</title>
+<meta name="description" content="Super-resolving sparse radar toward LiDAR-like density with a diffusion prior learned from unpaired LiDAR.">
+<link rel="canonical" href="https://yyxr75.github.io/projects/radarinv/">
+<meta property="og:title" content="RadarINV — Unsupervised Radar Point-Cloud Enhancement · Yanlong Yang">
+<meta property="og:description" content="Super-resolving sparse radar toward LiDAR-like density with a diffusion prior learned from unpaired LiDAR.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12c2.5-6 5-6 7.5 0s5 6 7.5 0 3.5-4 5-3"/></svg></span>Yanlong Yang</a>
+    <nav class="nav" aria-label="Main"><a href="/research/">Research</a><a href="/projects/" aria-current=page>Projects</a><a href="/about/">About</a><a href="/cv/">CV</a><a class="mail" href="mailto:yanlong.yang@my.jcu.edu.au">Email</a></nav>
+    <button class="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg></button>
+  </div>
+</header>
+<main id="main">
+
+<article class="wrap proj">
+  <a class="back mono" href="/projects/">← All projects</a>
+  <header class="proj-h">
+    <p class="card-meta"><span class="tag tag-research">Research</span><span class="mono">2023 – 2025</span></p>
+    <h1>RadarINV — Unsupervised Radar Point-Cloud Enhancement</h1>
+    <p class="lede">First author · arXiv 2025</p>
+  </header>
+  <div class="proj-grid">
+    <figure class="proj-fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="fig " role="img" aria-label="Sparse radar returns become a dense, LiDAR-like point cloud guided by a diffusion prior learned from unpaired LiDAR"><rect class="bg" width="400" height="300" rx="14"/><text class="lbl" x="20" y="44">sparse radar → LiDAR-like density</text><rect class="sf" x="20" y="64" width="130" height="150" rx="8"/><circle class="af" cx="58" cy="145" r="3.6"/><circle class="af" cx="72" cy="152" r="3.6"/><circle class="af" cx="98" cy="88" r="3.6"/><circle class="af" cx="35" cy="180" r="3.6"/><circle class="af" cx="60" cy="108" r="3.6"/><circle class="af" cx="136" cy="136" r="3.6"/><circle class="af" cx="119" cy="137" r="3.6"/><circle class="af" cx="99" cy="98" r="3.6"/><circle class="af" cx="99" cy="184" r="3.6"/><circle class="af" cx="87" cy="169" r="3.6"/><circle class="af" cx="102" cy="88" r="3.6"/><rect class="sf" x="250" y="64" width="130" height="150" rx="8"/><circle class="kf" cx="262.8" cy="84.3" r="1.8"/><circle class="kf" cx="268.4" cy="84.6" r="1.8"/><circle class="kf" cx="277.1" cy="87.6" r="1.8"/><circle class="kf" cx="283.7" cy="90.2" r="1.8"/><circle class="kf" cx="290.6" cy="91.1" r="1.8"/><circle class="kf" cx="296.7" cy="90.9" r="1.8"/><circle class="kf" cx="303.8" cy="90.8" r="1.8"/><circle class="kf" cx="312.1" cy="87.1" r="1.8"/><circle class="kf" cx="316.9" cy="85.9" r="1.8"/><circle class="kf" cx="326.4" cy="84.7" r="1.8"/><circle class="kf" cx="332.4" cy="82.3" r="1.8"/><circle class="kf" cx="339.0" cy="80.6" r="1.8"/><circle class="kf" cx="345.6" cy="79.7" r="1.8"/><circle class="kf" cx="353.3" cy="79.6" r="1.8"/><circle class="kf" cx="360.5" cy="79.3" r="1.8"/><circle class="kf" cx="368.1" cy="79.7" r="1.8"/><circle class="kf" cx="262.5" cy="97.0" r="1.8"/><circle class="kf" cx="270.1" cy="101.4" r="1.8"/><circle class="kf" cx="277.2" cy="101.9" r="1.8"/><circle class="kf" cx="283.6" cy="102.2" r="1.8"/><circle class="kf" cx="291.0" cy="104.1" r="1.8"/><circle class="kf" cx="296.4" cy="102.7" r="1.8"/><circle class="kf" cx="305.1" cy="104.9" r="1.8"/><circle class="kf" cx="309.8" cy="103.2" r="1.8"/><circle class="kf" cx="317.7" cy="99.7" r="1.8"/><circle class="kf" cx="324.4" cy="99.7" r="1.8"/><circle class="kf" cx="333.1" cy="95.5" r="1.8"/><circle class="kf" cx="339.3" cy="93.6" r="1.8"/><circle class="kf" cx="346.7" cy="93.0" r="1.8"/><circle class="kf" cx="354.1" cy="93.9" r="1.8"/><circle class="kf" cx="360.0" cy="93.5" r="1.8"/><circle class="kf" cx="366.4" cy="91.0" r="1.8"/><circle class="kf" cx="262.3" cy="110.6" r="1.8"/><circle class="kf" cx="268.1" cy="113.7" r="1.8"/><circle class="kf" cx="276.3" cy="114.7" r="1.8"/><circle class="kf" cx="281.6" cy="118.2" r="1.8"/><circle class="kf" cx="289.4" cy="119.2" r="1.8"/><circle class="kf" cx="298.2" cy="117.6" r="1.8"/><circle class="kf" cx="303.9" cy="117.5" r="1.8"/><circle class="kf" cx="311.4" cy="116.6" r="1.8"/><circle class="kf" cx="318.2" cy="115.1" r="1.8"/><circle class="kf" cx="326.3" cy="112.9" r="1.8"/><circle class="kf" cx="331.8" cy="111.5" r="1.8"/><circle class="kf" cx="338.2" cy="108.4" r="1.8"/><circle class="kf" cx="347.4" cy="107.5" r="1.8"/><circle class="kf" cx="353.1" cy="105.0" r="1.8"/><circle class="kf" cx="359.7" cy="106.2" r="1.8"/><circle class="kf" cx="365.6" cy="106.6" r="1.8"/><circle class="kf" cx="262.4" cy="124.7" r="1.8"/><circle class="kf" cx="269.4" cy="127.9" r="1.8"/><circle class="kf" cx="276.5" cy="129.3" r="1.8"/><circle class="kf" cx="283.6" cy="131.8" r="1.8"/><circle class="kf" cx="288.6" cy="130.5" r="1.8"/><circle class="kf" cx="297.5" cy="133.4" r="1.8"/><circle class="kf" cx="303.3" cy="131.3" r="1.8"/><circle class="kf" cx="311.3" cy="129.8" r="1.8"/><circle class="kf" cx="317.6" cy="128.2" r="1.8"/><circle class="kf" cx="324.6" cy="127.1" r="1.8"/><circle class="kf" cx="331.4" cy="124.5" r="1.8"/><circle class="kf" cx="339.8" cy="121.6" r="1.8"/><circle class="kf" cx="346.2" cy="122.2" r="1.8"/><circle class="kf" cx="352.4" cy="119.6" r="1.8"/><circle class="kf" cx="360.9" cy="119.2" r="1.8"/><circle class="kf" cx="366.1" cy="120.1" r="1.8"/><circle class="kf" cx="262.6" cy="138.8" r="1.8"/><circle class="kf" cx="268.5" cy="141.5" r="1.8"/><circle class="kf" cx="277.0" cy="143.5" r="1.8"/><circle class="kf" cx="284.1" cy="144.1" r="1.8"/><circle class="kf" cx="289.5" cy="146.3" r="1.8"/><circle class="kf" cx="298.2" cy="145.8" r="1.8"/><circle class="kf" cx="303.2" cy="144.3" r="1.8"/><circle class="kf" cx="311.1" cy="143.4" r="1.8"/><circle class="kf" cx="318.9" cy="143.8" r="1.8"/><circle class="kf" cx="324.1" cy="140.2" r="1.8"/><circle class="kf" cx="332.9" cy="139.3" r="1.8"/><circle class="kf" cx="339.9" cy="136.5" r="1.8"/><circle class="kf" cx="344.9" cy="134.8" r="1.8"/><circle class="kf" cx="353.9" cy="133.7" r="1.8"/><circle class="kf" cx="359.5" cy="133.8" r="1.8"/><circle class="kf" cx="366.8" cy="134.0" r="1.8"/><circle class="kf" cx="263.3" cy="153.0" r="1.8"/><circle class="kf" cx="267.5" cy="157.3" r="1.8"/><circle class="kf" cx="277.1" cy="159.2" r="1.8"/><circle class="kf" cx="282.8" cy="160.4" r="1.8"/><circle class="kf" cx="291.3" cy="159.0" r="1.8"/><circle class="kf" cx="297.7" cy="161.0" r="1.8"/><circle class="kf" cx="304.5" cy="159.5" r="1.8"/><circle class="kf" cx="310.4" cy="157.9" r="1.8"/><circle class="kf" cx="317.2" cy="155.4" r="1.8"/><circle class="kf" cx="325.3" cy="154.2" r="1.8"/><circle class="kf" cx="332.9" cy="151.5" r="1.8"/><circle class="kf" cx="340.2" cy="151.6" r="1.8"/><circle class="kf" cx="347.3" cy="150.6" r="1.8"/><circle class="kf" cx="354.2" cy="148.7" r="1.8"/><circle class="kf" cx="358.5" cy="148.7" r="1.8"/><circle class="kf" cx="366.0" cy="147.6" r="1.8"/><circle class="kf" cx="262.5" cy="168.1" r="1.8"/><circle class="kf" cx="268.7" cy="171.3" r="1.8"/><circle class="kf" cx="276.3" cy="171.2" r="1.8"/><circle class="kf" cx="282.3" cy="174.1" r="1.8"/><circle class="kf" cx="289.9" cy="174.7" r="1.8"/><circle class="kf" cx="296.6" cy="173.1" r="1.8"/><circle class="kf" cx="304.1" cy="174.4" r="1.8"/><circle class="kf" cx="310.0" cy="173.2" r="1.8"/><circle class="kf" cx="319.3" cy="171.7" r="1.8"/><circle class="kf" cx="326.0" cy="167.4" r="1.8"/><circle class="kf" cx="332.4" cy="167.9" r="1.8"/><circle class="kf" cx="337.6" cy="164.3" r="1.8"/><circle class="kf" cx="345.3" cy="163.5" r="1.8"/><circle class="kf" cx="352.8" cy="162.3" r="1.8"/><circle class="kf" cx="360.8" cy="160.5" r="1.8"/><circle class="kf" cx="365.7" cy="161.1" r="1.8"/><circle class="kf" cx="260.9" cy="180.7" r="1.8"/><circle class="kf" cx="270.4" cy="185.0" r="1.8"/><circle class="kf" cx="274.8" cy="185.7" r="1.8"/><circle class="kf" cx="282.4" cy="186.5" r="1.8"/><circle class="kf" cx="289.6" cy="188.3" r="1.8"/><circle class="kf" cx="297.3" cy="187.6" r="1.8"/><circle class="kf" cx="303.1" cy="186.9" r="1.8"/><circle class="kf" cx="309.9" cy="186.5" r="1.8"/><circle class="kf" cx="318.6" cy="184.4" r="1.8"/><circle class="kf" cx="323.7" cy="181.9" r="1.8"/><circle class="kf" cx="331.6" cy="181.2" r="1.8"/><circle class="kf" cx="339.8" cy="178.6" r="1.8"/><circle class="kf" cx="346.9" cy="177.8" r="1.8"/><circle class="kf" cx="352.8" cy="176.0" r="1.8"/><circle class="kf" cx="360.0" cy="176.6" r="1.8"/><circle class="kf" cx="366.8" cy="176.8" r="1.8"/><circle class="kf" cx="261.9" cy="195.2" r="1.8"/><circle class="kf" cx="269.1" cy="198.5" r="1.8"/><circle class="kf" cx="274.7" cy="199.5" r="1.8"/><circle class="kf" cx="282.8" cy="202.2" r="1.8"/><circle class="kf" cx="291.3" cy="201.5" r="1.8"/><circle class="kf" cx="298.2" cy="202.8" r="1.8"/><circle class="kf" cx="303.3" cy="201.3" r="1.8"/><circle class="kf" cx="309.9" cy="201.3" r="1.8"/><circle class="kf" cx="318.5" cy="199.9" r="1.8"/><circle class="kf" cx="325.9" cy="197.3" r="1.8"/><circle class="kf" cx="332.7" cy="195.0" r="1.8"/><circle class="kf" cx="337.8" cy="193.3" r="1.8"/><circle class="kf" cx="344.5" cy="190.4" r="1.8"/><circle class="kf" cx="353.8" cy="189.1" r="1.8"/><circle class="kf" cx="358.8" cy="188.8" r="1.8"/><circle class="kf" cx="368.1" cy="189.3" r="1.8"/><path class="m" d="M156,139 L244,139"/><path class="mf" d="M244,139 l-8,-4 l0,8 z"/><rect class="bgc" x="172" y="118" width="56" height="42" rx="8"/><rect class="a" x="172" y="118" width="56" height="42" rx="8"/><text class="lbl acc" x="200" y="144" text-anchor="middle">prior</text><path class="m" stroke-dasharray="4 5" d="M200,236 L200,166"/><text class="lbl" x="200" y="258" text-anchor="middle">learned from arbitrary, unpaired LiDAR</text></svg></figure>
+    <div class="proj-txt">
+      <p>A small automotive radar array cannot resolve nearby targets in angle, so its point clouds are sparse and noisy. RadarINV enhances them toward LiDAR-like density using a diffusion prior learned from arbitrary, unpaired LiDAR data — removing the need for paired radar/LiDAR supervision.</p><p>The project began at Vanjee as radar super-resolution from raw radar signals and continued into my PhD.</p>
+      <h2 class="h3">Highlights</h2>
+      <ul class="ticks"><li>Unsupervised: no paired radar/LiDAR data</li><li>Diffusion prior from arbitrary LiDAR datasets</li><li>Array super-resolution as an inverse problem</li></ul>
+      <div class="proj-links"><span class="links"><a class="btn" href="https://arxiv.org/abs/2505.09887" rel=noopener>arXiv</a><a class="btn" href="https://github.com/yyxr75/RadarINV" rel=noopener>Code</a></span></div>
+    </div>
+  </div>
+  <h2 class="h3">Publication</h2><div class="pubs"><article class="pub" id="radarinv" data-kind="preprint">
+  <div class="pub-meta"><span class="yr">2025</span><span class="tag tag-preprint">Preprint</span></div>
+  
+  <div class="pub-body">
+    <h3><span class="star" title="First or co-first author">★</span>Unsupervised Radar Point-Cloud Enhancement via Arbitrary LiDAR-Guided Diffusion Prior</h3>
+    <p class="au"><strong>Y. Yang</strong>, J. Liu, G. Luo, H. Li, E. Ahn, M. Rahimi Azghadi, T. Huang</p>
+    <p class="ven"><em>arXiv:2505.09887</em></p>
+    <p class="blurb">Enhances sparse, noisy radar point clouds toward LiDAR-like density with a diffusion prior learned from arbitrary, unpaired LiDAR data.</p>
+    <span class="links"><a class="lk" href="https://arxiv.org/abs/2505.09887" rel=noopener>arXiv</a><a class="lk" href="https://github.com/yyxr75/RadarINV" rel=noopener>Code</a><a class="lk" href="/projects/radarinv/">Project</a></span>
+  </div>
+</article></div>
+  <nav class="pager" aria-label="More projects"><a href="/projects/self-diffusion/"><span class="mono">← Newer</span>Self-Diffusion for Solving Inverse Problems</a><a class="r" href="/projects/ralibev/"><span class="mono">Older →</span>RaLiBEV — Radar &amp; LiDAR BEV Fusion</a></nav>
+</article>
+
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© 2026 Yanlong Yang · Cairns, Australia</span>
+    <span class="foot-l"><a href="mailto:yanlong.yang@my.jcu.edu.au">Email</a><a href="https://scholar.google.com/citations?user=aMDjXZEAAAAJ" rel="noopener">Google Scholar</a><a href="https://github.com/yyxr75" rel="noopener">GitHub</a><a href="https://orcid.org/0009-0000-8870-5993" rel="noopener">ORCID</a></span>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

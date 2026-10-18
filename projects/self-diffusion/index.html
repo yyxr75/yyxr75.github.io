@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Self-Diffusion for Solving Inverse Problems · Yanlong Yang</title>
+<meta name="description" content="A self-diffusion framework that adapts to arbitrary forward operators using an untrained self-denoiser.">
+<link rel="canonical" href="https://yyxr75.github.io/projects/self-diffusion/">
+<meta property="og:title" content="Self-Diffusion for Solving Inverse Problems · Yanlong Yang">
+<meta property="og:description" content="A self-diffusion framework that adapts to arbitrary forward operators using an untrained self-denoiser.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12c2.5-6 5-6 7.5 0s5 6 7.5 0 3.5-4 5-3"/></svg></span>Yanlong Yang</a>
+    <nav class="nav" aria-label="Main"><a href="/research/">Research</a><a href="/projects/" aria-current=page>Projects</a><a href="/about/">About</a><a href="/cv/">CV</a><a class="mail" href="mailto:yanlong.yang@my.jcu.edu.au">Email</a></nav>
+    <button class="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg></button>
+  </div>
+</header>
+<main id="main">
+
+<article class="wrap proj">
+  <a class="back mono" href="/projects/">← All projects</a>
+  <header class="proj-h">
+    <p class="card-meta"><span class="tag tag-research">Research</span><span class="mono">2025</span></p>
+    <h1>Self-Diffusion for Solving Inverse Problems</h1>
+    <p class="lede">Co-author · arXiv 2025</p>
+  </header>
+  <div class="proj-grid">
+    <figure class="proj-fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="fig " role="img" aria-label="Noisy measurements converge toward a clean signal through repeated noising and denoising steps"><rect class="bg" width="400" height="300" rx="14"/><text class="lbl" x="20" y="44">noise ⇄ denoise, untrained network</text><path class="m" d="M24.0,93.9 L30.0,125.3 L36.0,121.6 L42.0,99.2 L48.0,109.8 L54.0,107.8 L60.0,116.7 L66.0,122.7 L72.0,92.1 L78.0,89.2 L84.0,124.8 L90.0,107.0 L96.0,121.5 L102.0,88.1 L108.0,107.6 L114.0,119.7 L120.0,98.1 L126.0,129.6 L132.0,127.7 L138.0,89.3 L144.0,89.1 L150.0,111.8"/><path class="k" d="M250.0,110.0 L254.0,118.5 L258.0,125.7 L262.0,130.5 L266.0,132.0 L270.0,130.1 L274.0,125.0 L278.0,117.5 L282.0,108.9 L286.0,100.5 L290.0,93.5 L294.0,89.1 L298.0,88.1 L302.0,90.4 L306.0,95.9 L310.0,103.5 L314.0,112.2 L318.0,120.5 L322.0,127.2 L326.0,131.2 L330.0,131.8 L334.0,129.1 L338.0,123.3 L342.0,115.4 L346.0,106.7 L350.0,98.5 L354.0,92.1 L358.0,88.6 L362.0,88.3 L366.0,91.5 L370.0,97.6 L374.0,105.6"/><circle class="sf" cx="200" cy="110" r="34"/><path class="a" d="M182,100 A22,22 0 1 1 182,122"/><path class="af" d="M178,92 L184,102 L174,104 z"/><text class="lbl" x="200" y="168" text-anchor="middle">×T steps</text><path class="m" opacity="0.5" d="M24.0,212.6 L30.0,207.4 L36.0,212.8 L42.0,199.4 L48.0,221.3 L54.0,221.6 L60.0,215.5 L66.0,197.8 L72.0,210.7 L78.0,203.8 L84.0,201.0 L90.0,226.3 L96.0,227.9 L102.0,193.6 L108.0,223.0 L114.0,213.7 L120.0,205.7 L126.0,202.2 L132.0,216.3 L138.0,208.4 L144.0,216.7 L150.0,215.8 L156.0,196.8 L162.0,219.6 L168.0,227.4 L174.0,226.9 L180.0,214.1 L186.0,193.6 L192.0,192.1 L198.0,196.8 L204.0,225.9 L210.0,202.9 L216.0,205.2 L222.0,224.3 L228.0,203.3 L234.0,211.8 L240.0,207.7 L246.0,194.3 L252.0,213.0 L258.0,222.4 L264.0,197.6 L270.0,200.1 L276.0,206.9 L282.0,193.3 L288.0,209.9 L294.0,221.4 L300.0,215.7 L306.0,211.2 L312.0,222.8 L318.0,197.4 L324.0,212.4 L330.0,205.5 L336.0,213.6 L342.0,196.1 L348.0,219.9 L354.0,195.5 L360.0,198.0 L366.0,221.1 L372.0,226.1"/><path class="m" opacity="0.7" d="M24.0,237.0 L30.0,239.3 L36.0,247.3 L42.0,237.2 L48.0,238.2 L54.0,239.9 L60.0,231.1 L66.0,238.3 L72.0,240.9 L78.0,244.4 L84.0,229.1 L90.0,233.7 L96.0,229.0 L102.0,244.8 L108.0,242.3 L114.0,227.9 L120.0,248.6 L126.0,248.2 L132.0,241.4 L138.0,240.5 L144.0,230.5 L150.0,227.3 L156.0,238.6 L162.0,228.3 L168.0,231.2 L174.0,232.3 L180.0,227.7 L186.0,237.2 L192.0,236.7 L198.0,245.5 L204.0,238.4 L210.0,241.1 L216.0,238.0 L222.0,241.6 L228.0,237.1 L234.0,233.1 L240.0,248.9 L246.0,248.9 L252.0,245.5 L258.0,242.6 L264.0,233.9 L270.0,232.1 L276.0,233.4 L282.0,228.5 L288.0,243.9 L294.0,235.8 L300.0,245.6 L306.0,235.5 L312.0,248.1 L318.0,245.6 L324.0,227.0 L330.0,231.6 L336.0,247.0 L342.0,237.3 L348.0,248.6 L354.0,235.7 L360.0,228.6 L366.0,240.8 L372.0,244.1"/><path class="k" d="M24.0,266.0 L28.0,269.9 L32.0,273.2 L36.0,275.3 L40.0,276.0 L44.0,275.1 L48.0,272.8 L52.0,269.4 L56.0,265.5 L60.0,261.7 L64.0,258.5 L68.0,256.5 L72.0,256.0 L76.0,257.1 L80.0,259.6 L84.0,263.1 L88.0,267.0 L92.0,270.8 L96.0,273.8 L100.0,275.6 L104.0,275.9 L108.0,274.7 L112.0,272.0 L116.0,268.5 L120.0,264.5 L124.0,260.8 L128.0,257.9 L132.0,256.3 L136.0,256.2 L140.0,257.6 L144.0,260.4 L148.0,264.0 L152.0,268.0 L156.0,271.6 L160.0,274.4 L164.0,275.8 L168.0,275.7 L172.0,274.1 L176.0,271.2 L180.0,267.5 L184.0,263.5 L188.0,260.0 L192.0,257.3 L196.0,256.1 L200.0,256.4 L204.0,258.2 L208.0,261.2 L212.0,265.0 L216.0,268.9 L220.0,272.4 L224.0,274.9 L228.0,276.0 L232.0,275.5 L236.0,273.5 L240.0,270.3 L244.0,266.5 L248.0,262.6 L252.0,259.2 L256.0,256.9 L260.0,256.0 L264.0,256.7 L268.0,258.8 L272.0,262.1 L276.0,266.0 L280.0,269.9 L284.0,273.2 L288.0,275.3 L292.0,276.0 L296.0,275.1 L300.0,272.8 L304.0,269.4 L308.0,265.5 L312.0,261.7 L316.0,258.5 L320.0,256.5 L324.0,256.0 L328.0,257.1 L332.0,259.6 L336.0,263.1 L340.0,267.0 L344.0,270.8 L348.0,273.8 L352.0,275.6 L356.0,275.9 L360.0,274.7 L364.0,272.0 L368.0,268.5 L372.0,264.5 L376.0,260.8"/></svg></figure>
+    <div class="proj-txt">
+      <p>Self-diffusion alternates noising and denoising with an untrained convolutional self-denoiser. Because nothing is pretrained, the same procedure adapts to arbitrary forward operators — a general recipe for inverse problems where clean training data is scarce.</p>
+      <h2 class="h3">Highlights</h2>
+      <ul class="ticks"><li>Untrained convolutional self-denoiser</li><li>Works with arbitrary forward operators</li><li>Foundation for DeblurSDI</li></ul>
+      <div class="proj-links"><span class="links"><a class="btn" href="https://arxiv.org/abs/2510.21417" rel=noopener>arXiv</a></span></div>
+    </div>
+  </div>
+  <h2 class="h3">Publication</h2><div class="pubs"><article class="pub" id="self-diffusion" data-kind="preprint">
+  <div class="pub-meta"><span class="yr">2025</span><span class="tag tag-preprint">Preprint</span></div>
+  
+  <div class="pub-body">
+    <h3>Self-Diffusion for Solving Inverse Problems</h3>
+    <p class="au">G. Luo, S. Huang, <strong>Y. Yang</strong></p>
+    <p class="ven"><em>arXiv:2510.21417</em></p>
+    <p class="blurb">Alternates noising and denoising with an untrained convolutional self-denoiser, adapting to arbitrary forward operators without pretrained priors.</p>
+    <span class="links"><a class="lk" href="https://arxiv.org/abs/2510.21417" rel=noopener>arXiv</a><a class="lk" href="/projects/self-diffusion/">Project</a></span>
+  </div>
+</article></div>
+  <nav class="pager" aria-label="More projects"><a href="/projects/deblursdi/"><span class="mono">← Newer</span>DeblurSDI — Self-Diffusion Driven Blind Imaging</a><a class="r" href="/projects/radarinv/"><span class="mono">Older →</span>RadarINV — Unsupervised Radar Point-Cloud Enhancement</a></nav>
+</article>
+
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© 2026 Yanlong Yang · Cairns, Australia</span>
+    <span class="foot-l"><a href="mailto:yanlong.yang@my.jcu.edu.au">Email</a><a href="https://scholar.google.com/citations?user=aMDjXZEAAAAJ" rel="noopener">Google Scholar</a><a href="https://github.com/yyxr75" rel="noopener">GitHub</a><a href="https://orcid.org/0009-0000-8870-5993" rel="noopener">ORCID</a></span>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>

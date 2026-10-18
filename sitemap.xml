@@ -1,79 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc>https://yyxr75.github.io/projects/ralibev</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/projects/radarinv</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/projects/world-models</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/projects/crocodile-detection</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/projects/thermal-reconstruction</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/publication/2020-metamaterial-thz</loc>
-<lastmod>2020-01-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://yyxr75.github.io/publication/2022-thermal-reconstruction</loc>
-<lastmod>2022-01-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://yyxr75.github.io/publication/2023-ssp</loc>
-<lastmod>2023-01-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://yyxr75.github.io/publication/2025-ralibev</loc>
-<lastmod>2025-01-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://yyxr75.github.io/publication/2025-radarinv</loc>
-<lastmod>2025-05-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://yyxr75.github.io/publication/2025-self-diffusion-inverse</loc>
-<lastmod>2025-10-01T00:00:00+00:00</lastmod>
-</url>
-<url>
-<loc>https://yyxr75.github.io/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/categories/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/collection-archive/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/cv/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/page-archive/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/projects/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/publications/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/sitemap/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/tags/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/terms/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/year-archive/</loc>
-</url>
-<url>
-<loc>https://yyxr75.github.io/files/CV_YanlongYang.pdf</loc>
-<lastmod>2026-07-28T07:12:02+00:00</lastmod>
-</url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://yyxr75.github.io/</loc></url>
+  <url><loc>https://yyxr75.github.io/research/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/</loc></url>
+  <url><loc>https://yyxr75.github.io/about/</loc></url>
+  <url><loc>https://yyxr75.github.io/cv/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/ausimmitool/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/world-models/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/crocodile-detection/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/deblursdi/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/self-diffusion/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/radarinv/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/ralibev/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/data-closed-loop/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/mimo-radar/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/thermal-reconstruction/</loc></url>
+  <url><loc>https://yyxr75.github.io/projects/smart-car/</loc></url>
 </urlset>

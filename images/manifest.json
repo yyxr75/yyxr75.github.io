@@ -1,9 +1,13 @@
+---
+layout: none
+permalink: /images/manifest.json
+---
 {
-	"name": "Yanlong Yang",
-	"short_name": "Yanlong Yang",
-	"description": "PhD researcher in generative models for imaging, sensing, and world models.",
-	"start_url": "/",
-	"lang": "en-US",
+	"name": {{ site.title | jsonify }},
+	"short_name": {{ site.name | jsonify }},
+	"description": {{ site.description | jsonify }},
+	"start_url": "{{ site.baseurl | default: '/' }}",
+	"lang": {{ site.locale | default: "en" | jsonify }},
 	"icons": [
 		{
 			"src": "/images/favicon-192x192.png",
