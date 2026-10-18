@@ -7,19 +7,34 @@ GITHUB = "https://github.com/yyxr75"
 ORCID = "https://orcid.org/0009-0000-8870-5993"
 CV_PDF = "/files/CV_YanlongYang.pdf"
 
-TAGLINE = "I develop generative priors for sensing and inverse problems — recovering clean structure from noisy, incomplete measurements."
+TAGLINE = "I build deep-learning perception for autonomous driving, generative models for inverse problems, and the systems that put them to work in the field — from radar signal chains and data pipelines to a crocodile-detection system for the Queensland Government."
 
 BIO = [
     'I am a PhD candidate in Engineering at <a href="https://www.jcu.edu.au/">James Cook University</a>, Cairns, advised by <a href="https://research.jcu.edu.au/portfolio/tao.huang1/">Dr Tao Huang</a> in the <a href="https://www.taoicclab.com/">Intelligent Computing &amp; Communications Lab</a> (expected completion Oct 2027).',
-    'My path runs through waves. I trained in opto-electronics — electromagnetic fields, optics and THz spectroscopy — then spent four years at Vanjee Technology in Beijing turning raw radar echoes into detections: MIMO radar signal processing, radar–LiDAR fusion, and a data closed-loop system for vehicle–road cooperative driving, with nine granted patents along the way.',
-    'In my PhD I work one level deeper, on inverse problems: diffusion priors that super-resolve sparse radar without paired data, and self-diffusion methods that recover signals through unknown distortions with no pre-training (first author, CVPR 2026). I am extending these ideas toward world models for perception.',
+    'I work across the whole stack of AI for perception. At Vanjee Technology in Beijing I spent four years as an algorithm engineer on autonomous and vehicle–road cooperative driving: 3D object detection and radar–LiDAR fusion, the MIMO radar signal chain underneath them, and a data closed-loop system I led to keep models improving after deployment — with nine granted patents along the way.',
+    'In my PhD I develop generative models for inverse problems — diffusion priors that super-resolve sparse radar without paired data, and self-diffusion methods that recover images through unknown blur with no pre-training (first author, CVPR 2026) — and I am extending them toward world models for driving. I also build applied systems end to end: computer vision deployed for crocodile monitoring with the Queensland Government, and a public data platform for Australian skilled migration.',
+    'My background in opto-electronics and hardware — optics, THz spectroscopy, PCB design and multi-sensor rigs — means I am comfortable from the sensor and the signal all the way up to the model and the product.',
+]
+
+# Home "What I do" pillars: (title, one-liner, skills, [project slugs])
+PILLARS = [
+    ("Autonomous-driving perception", "Deep learning for 3D detection, radar–LiDAR fusion and tracking, from research models to production pipelines.",
+     ["PyTorch", "3D detection", "BEV fusion", "point clouds", "world models"], ["ralibev", "data-closed-loop", "world-models"]),
+    ("Generative models &amp; inverse problems", "Diffusion priors and self-diffusion for recovering clean images and point clouds from degraded, incomplete data.",
+     ["diffusion models", "self-supervised learning", "blind deconvolution", "super-resolution"], ["deblursdi", "radarinv", "self-diffusion"]),
+    ("Applied AI &amp; systems", "Taking models into the field and building the systems around them — data loops, deployment, and full products.",
+     ["deployment", "data pipelines", "team lead", "web &amp; cloud"], ["crocodile-detection", "data-closed-loop", "ausimmitool"]),
+    ("Signals &amp; hardware", "Radar signal processing, multi-sensor synchronisation and embedded hardware — the layer the models stand on.",
+     ["MIMO radar", "FFT / CFAR / AoA", "ROS", "PCB design", "embedded MCUs"], ["mimo-radar", "thermal-reconstruction", "smart-car"]),
 ]
 
 INTERESTS = [
-    "Diffusion and generative priors for inverse problems and computational imaging",
-    "Radar signal processing and multi-sensor fusion (radar, LiDAR, camera)",
-    "3D perception: detection, tracking and point-cloud enhancement",
-    "World models for autonomous-driving perception",
+    "Deep learning for autonomous-driving perception",
+    "Diffusion and generative models for inverse problems",
+    "Multi-sensor fusion: radar, LiDAR, camera",
+    "3D detection, tracking and point-cloud enhancement",
+    "World models",
+    "Radar signal processing",
 ]
 
 STATS = [
@@ -214,9 +229,11 @@ SERVICE = [
     ("Reviewer", "International Conference on Learning Representations (2025, 2026)", "2025 – 2026"),
 ]
 SKILLS = [
-    ("Programming", "Python (primary), C/C++, MATLAB · PyTorch, PCL, OpenGL, Qt · Linux, Git, Jupyter"),
-    ("Methods", "diffusion / generative models · inverse problems · 3D detection &amp; tracking · sensor fusion · radar signal processing"),
-    ("Hardware", "PCB design (Altium Designer), embedded MCUs, ROS, multi-sensor rigs"),
+    ("Programming", "Python (primary), C/C++, MATLAB, JavaScript · Linux, Git, Jupyter"),
+    ("Deep learning", "PyTorch · 3D object detection &amp; tracking · BEV / multi-sensor fusion · diffusion &amp; generative models · self-supervised learning · GPU training"),
+    ("Perception &amp; 3D", "point clouds (PCL), radar heatmaps, camera vision, 3D reconstruction, OpenGL"),
+    ("Systems", "data closed-loop pipelines, model deployment on field hardware, ROS, Qt, GitHub Actions CI, Cloudflare Workers, web front-end"),
+    ("Signals &amp; hardware", "MIMO radar signal processing (FFT, CFAR, angle of arrival), multi-sensor time sync, PCB design (Altium), embedded MCUs"),
     ("Languages", "Chinese (native), English"),
 ]
 

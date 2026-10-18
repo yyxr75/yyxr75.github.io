@@ -129,20 +129,33 @@ def home():
     feat_pubs = "".join(pub_row(p, with_fig=True) for p in C.PUBS if p["id"] in ("deblursdi", "radarinv", "ralibev"))
     news = "".join(f'<li><span class="mono">{d}</span><span>{t}</span></li>' for d, t in C.NEWS)
     feat = [p for p in C.PROJECTS if p.get("feat")]
+    title = {"ralibev": "RaLiBEV", "data-closed-loop": "Data closed-loop", "world-models": "World models",
+             "deblursdi": "DeblurSDI", "radarinv": "RadarINV", "self-diffusion": "Self-Diffusion",
+             "crocodile-detection": "Crocodile detection", "ausimmitool": "ausimmitool.com",
+             "mimo-radar": "MIMO radar chain", "thermal-reconstruction": "3D thermal body", "smart-car": "Smart car"}
+    pillars = "".join(
+        f'<div class="pillar"><h3>{t}</h3><p>{d}</p><ul class="skl">{"".join(f"<li>{k}</li>" for k in sk)}</ul>'
+        f'<p class="pl-links">{" · ".join(f'<a href="/projects/{s}/">{title[s]}</a>' for s in ps)}</p></div>'
+        for t, d, sk, ps in C.PILLARS)
     cards = "".join(proj_card(p) for p in feat)
     body = f"""
 <section class="hero">
   <div class="wrap hero-in">
     <div class="hero-txt">
       <p class="kicker">PhD candidate · James Cook University</p>
-      <h1>Signals, <span class="acc">reconstructed.</span></h1>
+      <h1>From sensors to <span class="acc">deployed AI.</span></h1>
       <p class="lede">{C.TAGLINE}</p>
       <p class="hero-meta mono">Cairns, Australia · Advisor Dr Tao Huang · Expected Oct 2027</p>
       <div class="cta"><a class="btn btn-p" href="/research/">View research</a><a class="btn" href="{C.CV_PDF}">Download CV</a><button class="btn btn-g copy" type="button" data-copy="{C.EMAIL}">Copy email</button></div>
     </div>
-    <div class="hero-fig">{fig("hero", "hero-svg")}<p class="cap">From wave to measurement to reconstruction — the thread through my work in optics, radar and generative models.</p></div>
+    <div class="hero-fig">{fig("hero", "hero-svg")}<p class="cap">Four sides of my work: perception for autonomous driving, generative models, applied AI systems, and the signals and hardware underneath.</p></div>
   </div>
   <div class="wrap"><div class="stats">{stats}</div></div>
+</section>
+
+<section class="wrap blk">
+  {section_head("What I do", None, "Experience &amp; skills")}
+  <div class="pillars">{pillars}</div>
 </section>
 
 <section class="wrap blk">
@@ -167,7 +180,7 @@ def home():
   <div class="grid">{cards}</div>
 </section>
 """
-    page("", C.NAME, "Yanlong Yang — PhD candidate at James Cook University working on generative priors for sensing and inverse problems, radar signal processing and multi-sensor perception.", body)
+    page("", C.NAME, "Yanlong Yang — PhD candidate at James Cook University: deep learning for autonomous-driving perception, generative models for inverse problems, and applied AI systems.", body)
 
 
 def research():
@@ -181,7 +194,7 @@ def research():
 <section class="wrap page-h">
   <p class="kicker">Research</p>
   <h1>Publications &amp; patents</h1>
-  <p class="lede">Generative priors for sensing and inverse problems, built on a background in wave physics and radar. ★ marks first or co-first authorship; full list on <a href="{C.SCHOLAR}" rel="noopener">Google Scholar</a>.</p>
+  <p class="lede">Papers on autonomous-driving perception, generative models for inverse problems and multi-sensor sensing, plus patents from four years in industry. ★ marks first or co-first authorship; full list on <a href="{C.SCHOLAR}" rel="noopener">Google Scholar</a>.</p>
   <ul class="themes">{interests}</ul>
 </section>
 <section class="wrap blk">
