@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>3D Human Thermal-Surface Reconstruction · Yanlong Yang</title>
+<meta name="description" content="Fusing depth and thermal cameras to build 3D human body models textured with temperature.">
+<link rel="canonical" href="https://yyxr75.github.io/projects/thermal-reconstruction/">
+<meta property="og:title" content="3D Human Thermal-Surface Reconstruction · Yanlong Yang">
+<meta property="og:description" content="Fusing depth and thermal cameras to build 3D human body models textured with temperature.">
+<meta property="og:type" content="website">
+<link rel="icon" href="/images/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/images/favicon-32x32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="/images/apple-touch-icon-180x180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top">
+  <div class="wrap top-in">
+    <a class="brand" href="/"><span class="mark" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M2 12c2.5-6 5-6 7.5 0s5 6 7.5 0 3.5-4 5-3"/></svg></span>Yanlong Yang</a>
+    <nav class="nav" aria-label="Main"><a href="/research/">Research</a><a href="/projects/" aria-current=page>Projects</a><a href="/about/">About</a><a href="/cv/">CV</a><a class="mail" href="mailto:yanlong.yang@my.jcu.edu.au">Email</a></nav>
+    <button class="theme" type="button" aria-label="Toggle dark mode"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 13A9 9 0 1 1 11 3a7 7 0 0 0 10 10z"/></svg></button>
+  </div>
+</header>
+<main id="main">
+
+<article class="wrap proj">
+  <a class="back mono" href="/projects/">← All projects</a>
+  <header class="proj-h">
+    <p class="card-meta"><span class="tag tag-research">Research</span><span class="mono">2018 – 2020</span></p>
+    <h1>3D Human Thermal-Surface Reconstruction</h1>
+    <p class="lede">Master's research · Beijing Institute of Technology</p>
+  </header>
+  <div class="proj-grid">
+    <figure class="proj-fig"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" class="fig " role="img" aria-label="A depth camera and a thermal camera, synchronised, produce a 3D human body mesh textured with temperature"><rect class="bg" width="400" height="300" rx="14"/><text class="lbl" x="20" y="44">depth + thermal → 3D</text><rect class="k" x="24" y="90" width="58" height="30" rx="6"/><circle class="k" cx="42" cy="105" r="7"/><circle class="k" cx="64" cy="105" r="7"/><text class="lbl" x="53" y="138" text-anchor="middle">depth</text><rect class="k" x="24" y="170" width="58" height="34" rx="6"/><circle class="a" cx="53" cy="187" r="10"/><text class="lbl" x="53" y="222" text-anchor="middle">thermal</text><path class="m" d="M90,105 L150,150 M90,187 L150,150"/><circle class="sf" cx="160" cy="150" r="20"/><text class="lbl" x="160" y="154" text-anchor="middle">sync</text><path class="m" d="M174,150 L214,150"/><path class="mf" d="M214,150 l-8,-4 l0,8 z"/><path class="sf" d="M300,62 a16,16 0 1 1 0.1,0 M284,96 Q300,88 316,96 L332,150 L322,154 L312,120 L314,190 L320,262 L306,262 L300,200 L294,262 L280,262 L286,190 L288,120 L278,154 L268,150 Z"/><ellipse class="af" opacity=".55" cx="300" cy="118" rx="12" ry="16"/><ellipse class="af" opacity=".35" cx="300" cy="78" rx="10" ry="10"/><ellipse class="af" opacity=".2" cx="300" cy="170" rx="10" ry="18"/><path class="k" d="M300,62 a16,16 0 1 1 0.1,0 M284,96 Q300,88 316,96 L332,150 L322,154 L312,120 L314,190 L320,262 L306,262 L300,200 L294,262 L280,262 L286,190 L288,120 L278,154 L268,150 Z"/><path class="m" opacity=".35" d="M286,110 L314,110"/><path class="m" opacity=".35" d="M286,128 L314,128"/><path class="m" opacity=".35" d="M286,146 L314,146"/><path class="m" opacity=".35" d="M286,164 L314,164"/><path class="m" opacity=".35" d="M286,182 L314,182"/><path class="m" opacity=".35" d="M286,200 L314,200"/><path class="m" opacity=".35" d="M286,218 L314,218"/><path class="m" opacity=".35" d="M286,236 L314,236"/></svg></figure>
+    <div class="proj-txt">
+      <p>A ROS-based capture system time-synchronises an Intel RealSense D435i depth camera with a lab-built FLIR thermal camera. Point-cloud registration and global optimisation reconstruct a full 3D body model, and thermal imagery is UV-mapped onto the mesh to output a textured 3D thermal body for analysing surface heat distribution.</p><p>I designed the hardware, software and mechanical structure.</p>
+      <h2 class="h3">Highlights</h2>
+      <ul class="ticks"><li>ROS-based multi-camera time synchronisation</li><li>Point-cloud registration and global optimisation</li><li>UV-mapped thermal texture on a 3D mesh</li></ul>
+      
+    </div>
+  </div>
+  <h2 class="h3">Publication</h2><div class="pubs"><article class="pub" id="thermal" data-kind="journal">
+  <div class="pub-meta"><span class="yr">2022</span><span class="tag tag-journal">Journal</span></div>
+  
+  <div class="pub-body">
+    <h3>Fusion Reconstruction Method for 3D Temperature Fields on the Human Body Surface</h3>
+    <p class="au"><strong>Y. Yang</strong>, C. Xu</p>
+    <p class="ven"><em>Infrared Technology</em></p>
+    <p class="blurb">Fuses depth and thermal imaging to reconstruct textured 3D temperature fields of the human body surface.</p>
+    <span class="links"><a class="lk" href="/projects/thermal-reconstruction/">Project</a></span>
+  </div>
+</article></div>
+  <nav class="pager" aria-label="More projects"><a href="/projects/mimo-radar/"><span class="mono">← Newer</span>MIMO Radar Signal-Processing Chain</a><a class="r" href="/projects/smart-car/"><span class="mono">Older →</span>Autonomous Smart-Car — NXP Cup</a></nav>
+</article>
+
+</main>
+<footer class="foot">
+  <div class="wrap foot-in">
+    <span>© 2026 Yanlong Yang · Cairns, Australia</span>
+    <span class="foot-l"><a href="mailto:yanlong.yang@my.jcu.edu.au">Email</a><a href="https://scholar.google.com/citations?user=aMDjXZEAAAAJ" rel="noopener">Google Scholar</a><a href="https://github.com/yyxr75" rel="noopener">GitHub</a><a href="https://orcid.org/0009-0000-8870-5993" rel="noopener">ORCID</a></span>
+  </div>
+</footer>
+<script src="/assets/site.js" defer></script>
+</body>
+</html>
